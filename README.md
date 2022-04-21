@@ -10,7 +10,7 @@
 
 ## Configs
 
-<details>
+<details open>
 <summary>UnoCss</summary>
 
 🌭 [`uno.config.ts`](uno.config.ts) -- **_unocss config file_**
@@ -22,7 +22,7 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 
 </details>
 
-<details>
+<details open>
 <summary>GitIgnore</summary>
 
 🍕 [`.gitingore`](.gitignore) -- **_gitignore file_**
@@ -33,15 +33,13 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 
 </details>
 
-<details>
+<details open>
 <summary>MIT LICENSE</summary>
 
 🥞 [`LICENSE`](LICENSE) -- **_Mit License_**
 
 - 2022 Year
 </details>
-
-## Usage
 
 ## License
 
