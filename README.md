@@ -44,7 +44,7 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 <details open>
 <summary>READEME</summary>
 
-🥞 [`README`](READMETemplate.MD) -- **_readme template_**
+🥠 [`README`](READMETemplate.MD) -- **_readme template_**
 
 - Icon slot
 - Description slot
