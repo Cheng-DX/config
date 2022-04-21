@@ -41,6 +41,19 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 - 2022 Year
 </details>
 
+<details open>
+<summary>READEME</summary>
+
+🥞 [`README`](READMETemplate.MD) -- **_readme template_**
+
+- Icon slot
+- Description slot
+- Features slot
+- Usage slot
+- License slot
+
+</details>
+
 ## License
 
 [MIT](./LICENSE) License © 2022 [Cheng-DX](https://github.com/Cheng-DX)
