@@ -1,4 +1,14 @@
-# Configs
+<br>
+
+<p align="center">
+<img style="width: 100px" src="./asset/config-icon.png"/>
+</p>
+
+<h1 align="center">CONFIG</h1>
+
+<p align="center">Some configs</p>
+
+## Configs
 
 <details>
 <summary>UnoCss</summary>
@@ -30,3 +40,9 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 
 - 2022 Year
 </details>
+
+## Usage
+
+## License
+
+[MIT](./LICENSE) License © 2022 [Cheng-DX](https://github.com/Cheng-DX)
