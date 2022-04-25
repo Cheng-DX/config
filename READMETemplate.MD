@@ -1,14 +1,11 @@
 <br>
 
 <p align="center">
-<!-- ICON IMAGE -->
 <img src=""/>
 </p>
 
-<!-- NAME -->
 <h1 align="center"></h1>
 
-<!-- DESCRIPTION -->
 <p align="center"></p>
 
 <!-- PLAYGROUND -->
