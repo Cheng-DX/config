@@ -54,6 +54,17 @@ npm i -D @unocss/preset-icons @iconify-json/carbon
 
 </details>
 
+<details open>
+<summary>ESLint</summary>
+
+🌮 [`.eslintrc`](./.eslintrc) -- **_eslint config based on AntFu's_**
+
+```sh
+npm i -D eslint @antfu/eslint-config
+```
+- Turned off `arrow-paren`
+</details>
+
 ## License
 
 [MIT](./LICENSE) License © 2022 [Cheng-DX](https://github.com/Cheng-DX)
