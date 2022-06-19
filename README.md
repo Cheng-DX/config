@@ -23,6 +23,10 @@ like `unocss`
   100% [==============================] 100% 1.00  kB/s   00:00:00 --:--:-- --:--:--
 ```
 
+> <p align='center'>Developing: A better ui to add configs</p>
+> <br>
+> <img src="./asset/jsshell.png"/>
+
 ## Configs
 
 <details open>
