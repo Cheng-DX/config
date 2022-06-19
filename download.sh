@@ -1,4 +1,4 @@
-# download the latest version of the script from github
+# Download the latest version of the script from github
 # Moreover, help you install the nessessary packages
 # Usage: download.sh readme | gitignore | eslint | unocss | mit
 # Tip: create an alias might be helpful
@@ -11,7 +11,7 @@ then
     curl -o .gitignore https://raw.githubusercontent.com/Cheng-DX/config/main/.gitignore
 elif [ $1 = "mit" ]
 then
-    curl -o LICENSE https://raw.githubusercontent.com/Cheng-DX/config/main/LICENSE
+    curl -o LICENSE https://raw.githubusercontent.com/Cheng-DX/config/main/MITLICENSE
 elif [ $1 = "eslint" ]
 then
     curl -o .eslintrc https://raw.githubusercontent.com/Cheng-DX/config/main/.eslintrc
