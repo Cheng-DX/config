@@ -5,10 +5,10 @@
 
 if [ $1 = "readme" ]
 then
-    curl -o README.md https://raw.githubusercontent.com/Cheng-DX/config/main/READMETemplate.MD
+    curl -o README.md https://raw.githubusercontent.com/Cheng-DX/config/main/configs/READMETemplate.MD
 elif [ $1 = "gitignore" ]
 then
-    curl -o .gitignore https://raw.githubusercontent.com/Cheng-DX/config/main/.gitignore
+    curl -o .gitignore https://raw.githubusercontent.com/Cheng-DX/config/main/configs/.gitignore
 elif [ $1 = "mit" ]
 then
     curl -o LICENSE https://raw.githubusercontent.com/Cheng-DX/config/main/MITLICENSE

@@ -1,6 +1,7 @@
 const prompts = require('prompts')
 const shell = require('shelljs')
 const title = require('./title')
+const options = require('../../options')
 
 console.log(title)
 
@@ -9,30 +10,35 @@ console.log(title)
       type: 'select',
       name: 'config',
       message: 'Pick a file',
-      choices: [{
-        title: 'README',
-        value: 'readme',
-        description: 'README template',
-      }, {
-        title: 'Antfu\'s eslint',
-        value: 'eslint',
-        description: 'Antfu\'s eslint config file'
-      }, {
-        title: 'UnoCSS in TS',
-        value: 'unocss',
-        description: 'UnoCSS in TypeSCript file'
-      }, {
-        title: 'gitignore',
-        value: 'gitignore',
-        description: 'gitignore file'
-      }, {
-        title: 'MIT LICENSE',
-        value: 'mit',
-        description: 'MIT license file in 2022 @Cheng-DX'
-      }]
+      choices: options
     }])
-    const { config } = response
+    const {
+      config: {
+        filename,
+        packages = [],
+        packageManager = 'npm',
+        handler,
+        rename = filename
+      }
+    } = response
 
-    const { code } = shell.exec(`sh ~/df/download.sh ${config}`)
-    
+    const baseURL = 'https://raw.githubusercontent.com/Cheng-DX/config/main/configs'
+    const { code } = shell.exec(`curl -o ${rename} ${baseURL}/${filename}`)
+    console.log('result:', code)
+
+    const wantedPackages = await prompts([{
+      type: 'boolean',
+      name: 'isInstall',
+      message: 'Install the required packages?',
+      initial: true
+    }])
+    const { isInstall } = wantedPackages
+    if (isInstall && packages.length) {
+      packages.forEach(package => {
+        shell.exec(`${packageManager} install ${package}`)
+      })
+    }
+    if (handler) {
+      console.log('TODO')
+    }
   })()
