@@ -9,7 +9,17 @@
 <p align="center">Some configs</p>
 
 ## Usage
-_I strongly recommend you to use [`download.sh`](download.sh) to download config files cause it will install the packages at the same time._
+### ui(NEW)
+You can use a better ui(Powered by [prompt](https://github.com/flatiron/prompt)) to add config files now. Moreover, It will read options.js file then generate file list with a simple config.
+Learn more in [Contributing](https://github.com/Cheng-DX/config#contributing) 
+
+> <br>
+> <img src="./asset/jsshell.png"/>
+> <h3 align='center'>Preview</h3>
+
+### shell(OLD)
+
+There is a shell file -> [`download.sh`](download.sh) to download config files and dependencies for you._
 
 ```shell
 $ sh download.sh [config]
@@ -22,10 +32,6 @@ like `unocss`
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
   100% [==============================] 100% 1.00  kB/s   00:00:00 --:--:-- --:--:--
 ```
-
-> <p align='center'>Developing: A better ui to add configs</p>
-> <br>
-> <img src="./asset/jsshell.png"/>
 
 ## Contributing
 This repo needs your help, upload your config file then it will be available for everyone.
