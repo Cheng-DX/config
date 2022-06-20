@@ -6,7 +6,7 @@
 
 <h1 align="center">CONFIG</h1>
 
-<p align="center">Some configs</p>
+<p align="center">Manage your config file and packages, download the lasted version in 1 second. :P</p>
 
 ## Usage
 ### ui(NEW)
