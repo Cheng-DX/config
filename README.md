@@ -27,6 +27,15 @@ like `unocss`
 > <br>
 > <img src="./asset/jsshell.png"/>
 
+## Contributing
+This repo needs your help, upload your config file then it will be available for everyone.
+
+### Steps
+- Fork Me [Go to fork](https://github.com/Cheng-DX/config/fork)
+- Add your file to `/configs`
+- Add an item in file [options.js](options.js) to make your file is available in the ui
+> See option value type declaration in [options.d.ts](%40types/options.d.ts) to help you.
+
 ## Configs
 
 <details open>
