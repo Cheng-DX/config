@@ -4,7 +4,8 @@
   "description": "Download shell built by prompt",
   "main": "index.js",
   "scripts": {
-    "package": "pkg add-config.js --out-path packages" 
+    "package": "pkg add-config.js --out-path packages",
+    "dev": "node add-config.js"
   },
   "keywords": [
     "shell"
@@ -13,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "gradient-string": "^2.0.1",
+    "node-fetch": "^3.2.6",
     "prompts": "^2.4.2"
   },
   "devDependencies": {

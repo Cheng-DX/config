@@ -1,6 +1,7 @@
 const prompts = require('prompts')
 const shell = require('shelljs')
 const title = require('./title')
+const fetch = (url) => import('node-fetch').then(({ default: fetch }) => fetch(url));
 
 const BASE_URL = 'https://raw.githubusercontent.com/Cheng-DX/config/main'
 const OPTIONS_FILENAME = 'options.json'
@@ -13,7 +14,7 @@ async function init() {
     const choices = JSON.parse(await fileContent.text())
 
     const { config } = await prompts({
-      type: 'select',
+      type: 'multiselect',
       name: 'config',
       message: 'Pick a file',
       choices
@@ -30,7 +31,7 @@ async function init() {
     console.log('result:', code)
 
     const wantedPackages = await prompts({
-      type: 'boolean',
+      type: 'confirm',
       name: 'isInstall',
       message: 'Install the required packages?',
       initial: true
