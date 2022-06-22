@@ -4,7 +4,7 @@
   "description": "Download shell built by prompt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "pkg add-config.js --out-path packages" 
   },
   "keywords": [
     "shell"
