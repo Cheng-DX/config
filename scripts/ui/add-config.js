@@ -13,38 +13,45 @@ async function init() {
     const fileContent = await fetch(`${BASE_URL}/${OPTIONS_FILENAME}`)
     const choices = JSON.parse(await fileContent.text())
 
-    const { config } = await prompts({
+    const { configs } = await prompts({
       type: 'multiselect',
-      name: 'config',
+      name: 'configs',
       message: 'Pick a file',
       choices
     })
-    const {
-      filename,
-      packages = [],
-      packageManager = 'npm',
-      handler,
-      rename = filename
-    } = config
+    if(configs.length === 0) {
+      console.log('No file selected')
+      return
+    }
+    for (const config of configs) {
+      const {
+        filename,
+        packages = [],
+        packageManager = 'npm',
+        handler,
+        rename = filename
+      } = config
 
-    const { code } = shell.exec(`curl -o ${rename} ${BASE_URL}/configs/${filename}`)
-    console.log('result:', code)
+      const { code } = shell.exec(`curl -o ${rename} ${BASE_URL}/configs/${filename}`)
+      console.log('result:', code)
 
-    const wantedPackages = await prompts({
-      type: 'confirm',
-      name: 'isInstall',
-      message: 'Install the required packages?',
-      initial: true
-    })
-    const { isInstall } = wantedPackages
-    if (isInstall && packages.length) {
-      packages.forEach(package => {
-        shell.exec(`${packageManager} install ${package}`)
+      const wantedPackages = await prompts({
+        type: 'confirm',
+        name: 'isInstall',
+        message: 'Install the required packages?',
+        initial: true
       })
+      const { isInstall } = wantedPackages
+      if (isInstall && packages.length) {
+        packages.forEach(package => {
+          shell.exec(`${packageManager} install ${package}`)
+        })
+      }
+      if (handler) {
+        console.log('TODO')
+      }
     }
-    if (handler) {
-      console.log('TODO')
-    }
+
   } catch (e) {
     throw new Error(`It seem there is an error, check your network or open an issue on GitHub.
     Error log:
