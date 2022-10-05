@@ -1,5 +1,5 @@
 {
-  "name": "pak-name",
+  "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.12.0",
