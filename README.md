@@ -9,7 +9,7 @@
 <p align="center">Manage your config file and packages, download the lasted version in 1 second. :P</p>
 
 ## Usage
-### ui(NEW)
+### ui
 You can use a better ui(Powered by [prompt](https://github.com/flatiron/prompt)) to add config files now. Moreover, It will read options.js file then generate file list with a simple config.
 Learn more in [Contributing](https://github.com/Cheng-DX/config#contributing) 
 
@@ -17,7 +17,7 @@ Learn more in [Contributing](https://github.com/Cheng-DX/config#contributing)
 > <img src="./asset/jsshell.png"/>
 > <h3 align='center'>Preview</h3>
 
-### shell(OLD)
+### shell
 
 There is a shell file -> [`download.sh`](download.sh) to download config files and dependencies for you._
 
