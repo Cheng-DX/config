@@ -1,9 +1,6 @@
 {
   "extends": "@antfu",
   "rules": {
-    "arrow-parens": "off",
-    "@typescript-eslint/consistent-type-definitions": "off",
-    "eslintvue/component-name-in-template-casing": "kebab-case"
-  },
-  "ignorePatterns": "docs/"
+    "arrow-parens": "off"
+  }
 }
