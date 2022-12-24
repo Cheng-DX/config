@@ -25,7 +25,7 @@ elif [ $1 = "eslint" ]
 then
     curl -o .eslintrc $BASE_URL".eslintrc"
     echo "Installing package for you :P"
-    ni -D eslint @antfu/eslint-config --prefer-offline
+    nido eslint @antfu/eslint-config
     echo "Done, enjoy :)"
 
 # unocss @see https://github.com/unocss/unocss
@@ -34,7 +34,7 @@ elif [ $1 = "unocss" ]
 then
     curl -o uno.config.ts $BASE_URL"uno.config.ts"
     echo "Intalling packages for you :P"
-    ni -D unocss @unocss/preset-icons @iconify-json/carbon --prefer-offline
+    nido unocss @unocss/preset-icons @iconify-json/carbon @iconify-json/ic
 
 # package.json for starter-ts @see https://github.com/antfu/starter-ts
 elif [ $1 = "ts-packagejson" ]
